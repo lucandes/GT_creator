@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  background-color: yellowgreen;
+  min-width: 800px;
+}
+
+#header h1 {
+  color: white;
+  margin: 0;
+}
+
+#header h2 {
+  font-size: 13px;
+  color: rgb(126, 176, 27);
+  margin: 0;
+  margin-left: 100px;
+}
+
+#conteudo {
+  margin: 50px 0 0 50px;
+  width: 45%;
+  /* border: 1px solid red; */
+  float: left;
+  display: flex;
+}
+
+fieldset {
+  display: inline-block;
+  /* flex: top; */
+  position: relative;
+  padding: 10px;
+  padding-top: 20px;
+  border: 1px solid white;
+  color: white;
+  background-color: yellowgreen;
+}
+
+fieldset h3 {
+  margin: 0;
+  padding: 0 5px 0 5px;
+  position: absolute;
+  top: -8px;
+  font-size: 14px;
+  color: white;
+  background-color: yellowgreen;
+}
+
+#btnfinalizar {
+  display: block;
+  margin: auto;
+  padding: 15px;
+
+  font-size: 13px;
+  color: white;
+  background-color: seagreen;
+  border: none;
+  transition: 0.1s ease-in-out;
+}
+
+#btnfinalizar:hover {
+  color: darkgreen;
+  background-color: palegreen;
+  padding: 15px 30px 15px 30px;
+}
+
+/* GESTAO */
+
+#gestao {
+  width: 45%;
+  float: right;
+}
+
+#gestao #resultado {
+  width: 90%;
+  height: 500px;
+  margin: 50px 50px 0 0;
+  padding: 10px;
+}

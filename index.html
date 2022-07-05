@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="src/index.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <h1>GT Generator</h1>
+      <h2>confia no pai, vdc</h2>
+    </div>
+    <!-- fim do header -->
+
+    <div id="conteudo">
+      <fieldset>
+        <h3>Cliente</h3>
+        <input type="radio" name="cliente" /><label>Titular</label>
+        <input type="radio" name="cliente" /><label>Outro</label>
+      </fieldset>
+
+      <fieldset>
+        <h3>Demanda</h3>
+        <section>
+          <input type="checkbox" id="rd_internet" name="demanda" />
+          <label for="rd_internet">Internet</label>
+
+          <select id="sel_internet_demanda">
+            <option value="0">Sem sinal</option>
+            <option value="1">Lentidão</option>
+            <option value="2">Intermitência</option>
+            <option value="3">Troca de senha</option>
+          </select>
+
+          <input type="radio" name="modoconexao" id="modoconexaowifi" /><label
+            for="modoconexaowifi"
+            >Wi-Fi</label
+          >
+          <input type="radio" name="modoconexao" id="modoconexaoeth" /><label
+            for="modoconexaoeth"
+            >Ethernet</label
+          >
+        </section>
+        <!-- fim internet section -->
+        <section>
+          <input type="checkbox" id="rd_televisao" name="demanda" />
+          <label for="rd_internet">TV</label>
+
+          <select id="sel_internet_demanda">
+            <option value="0">Sem sinal</option>
+            <option value="1">Sem Acesso</option>
+            <option value="2">Digitalização</option>
+            <option value="3">Canal com falha</option>
+          </select>
+
+          <input type="radio" name="tecnologiatv" id="tecnologiatvhfc" />
+          <label for="tecnologiatvhfc">HFC</label>
+          
+          <input type="radio" name="tecnologiatv" id="tecnologiatvftth" />
+          <label for="tecnologiatvftth">FTTH</label>
+        </section>
+        <!-- fim internet section -->
+      </fieldset>
+
+      <button id="btnfinalizar">Finalizar</button>
+    </div>
+
+    <div id="gestao">
+      <textarea
+        placeholder="Ao pressionar o botão Finalizar, sua gestão aparecerá aqui."
+        id="resultado"
+        cols="30"
+        rows="10"
+      ></textarea>
+    </div>
+  </body>
+</html>
